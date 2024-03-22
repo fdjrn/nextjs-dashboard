@@ -9,7 +9,7 @@ spec:
   source:
     type: Git
     git:
-      uri: https://git.swamedia.xyz/fdjrn/nextjs-dashboard
+      uri: https://github.com/fdjrn/nextjs-dashboard
     contextDir:
   strategy:
     type: Docker
