@@ -2,8 +2,7 @@
 
 module.exports = {
     output: 'standalone',
-    crossOrigin: "anonymous",
-    // crossOrigin: 'anonymous'
+    // crossOrigin: "anonymous",
     // async headers() {
     //     return [
     //         {
