@@ -1,0 +1,21 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  namespace: demo
+  name: ubi8-nextjs
+  labels:
+    app: ubi8-nextjs
+spec:
+  source:
+    type: Git
+    git:
+      uri: https://git.swamedia.xyz/fdjrn/nextjs-dashboard
+    contextDir:
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile    # Look for Dockerfile in: gitUri/contextDir/dockerfilePath
+  output:
+    to:
+      kind: ImageStreamTag
+      name: ubi8-nextjs:latest
